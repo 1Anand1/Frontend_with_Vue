@@ -1,9 +1,11 @@
-<template>
-  <h1>Vue Jobs</h1>
-</template>
+<script>
+export default {
+  data() {
+    return { name: " Anand Dandavate" };
+  },
+};
+</script>
 
-<style scoped>
-h1 {
-  color: blue;
-}
-</style>
+<template>
+  {{ name }}
+</template>
