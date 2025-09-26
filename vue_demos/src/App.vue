@@ -1,11 +1,13 @@
 <script>
 export default {
   data() {
-    return { name: " Anand Dandavate" };
+    return { name: " Anand Dandavate", status: false };
   },
 };
 </script>
 
 <template>
-  {{ name }}
+  <h1>{{ name }}</h1>
+  <p v-if="status">User is active</p>
+  <p v-else>User is inactive</p>
 </template>
